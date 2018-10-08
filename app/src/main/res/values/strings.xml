@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BatteryGPS</string>
+    <string name="btn_start_enabled">START</string>
+    <string name="btn_start_running">Service running</string>
+    <string name="btn_stop_enabled">STOP</string>
+    <string name="btn_stop_disabled">Service not running</string>
+    <string name="toast_permission_denied">Cannot proceed, GPS permission denied</string>
+    <string name="toast_location_service_unavailable">Please turn on GPS</string>
+    <string name="toast_location_service_exception">Location service exception</string>
+</resources>

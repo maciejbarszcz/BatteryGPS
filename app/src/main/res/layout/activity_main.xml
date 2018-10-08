@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.macbar.batterygps.MyViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.startButtonLabel}"
+            android:layout_marginTop="@dimen/button_vertical_margin"
+            android:enabled="@{viewmodel.startButtonEnabled}"
+            android:onClick="@{(v) -> viewmodel.onStartButtonClicked()}" />
+
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewmodel.stopButtonLabel}"
+            android:layout_marginTop="@dimen/button_vertical_margin"
+            android:enabled="@{viewmodel.stopButtonEnabled}"
+            android:onClick="@{(v) -> viewmodel.onStopButtonClicked()}"/>
+
+    </LinearLayout>
+</layout>
+
